@@ -1,19 +1,56 @@
 // slider start
-
-const wrapper = document.querySelector(".wrapper");
-const listSlider = document.getElementsByClassName("slider-img");
+const container = document.querySelector(".container");
+const sliderMain = document.querySelector(".slider-main");
+const sliderItems = document.querySelectorAll(".slider-item");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
-// const dotBtn = document.querySelectorAll(".fa-circle-dot");
+const dotItems = document.querySelectorAll(".slider-dot-item");
 
+const sliderItemWidth = sliderItems[0].offsetWidth;
+const sliderLength = sliderItems.length;
+console.log("sliderItemWidth", sliderItemWidth);
+
+let positionX = 0;
+let index = 0;
 nextBtn.addEventListener("click", () => {
-  const widthEle = listSlider[0].clientWidth;
-  wrapper.scrollBy(widthEle, 0);
+  handerChangeSlide(1);
 });
 
 prevBtn.addEventListener("click", () => {
-  const widthEle = listSlider[0].clientWidth;
-  wrapper.scrollBy(-widthEle, 0);
+  handerChangeSlide(-1);
 });
+
+[...dotItems].forEach((item) =>
+  item.addEventListener("click", (e) => {
+    [...dotItems].forEach((ele) => ele.classList.remove("isSelect"));
+    e.target.classList.add("isSelect");
+    const slideIndex = parseInt(e.target.dataset.index);
+    index = slideIndex;
+    positionX = -1 * index * sliderItemWidth;
+    console.log(index);
+    sliderMain.style = `transform: translateX(${positionX}px)`;
+  })
+);
+function handerChangeSlide(dir) {
+  if (dir === 1) {
+    if (index >= sliderLength - 1) {
+      index = sliderLength - 1;
+      return;
+    }
+    positionX = positionX - sliderItemWidth;
+    sliderMain.style = `transform: translateX(${positionX}px)`;
+    index++;
+  } else if (dir === -1) {
+    if (index <= 0) {
+      index = 0;
+      return;
+    }
+    positionX = positionX + sliderItemWidth;
+    sliderMain.style = `transform: translateX(${positionX}px)`;
+    index--;
+  }
+  [...dotItems].forEach((ele) => ele.classList.remove("isSelect"));
+  dotItems[index].classList.add("isSelect");
+}
 
 //slider end
