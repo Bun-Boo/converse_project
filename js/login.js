@@ -8,7 +8,7 @@ btnLogin.addEventListener("click", (e) => {
   let data = JSON.parse(user);
 
   if (user == null) {
-    alert("Please enter your username , password , email !");
+    alert("Wrong username or password !");
   } else if (
     usernameEle == data.username &&
     emailEle == data.email &&

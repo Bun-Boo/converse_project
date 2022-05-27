@@ -15,6 +15,7 @@ btnSignUp.addEventListener("click", (e) => {
   if (password.value === cfpassword.value) {
     localStorage.setItem(username.value, json);
     alert("Sign Up Success");
+    window.location.href = "login.html";
   } else {
     alert("Passwords are not the same");
   }

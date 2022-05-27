@@ -12,6 +12,9 @@ console.log("sliderItemWidth", sliderItemWidth);
 
 let positionX = 0;
 let index = 0;
+// setInterval(() => {
+//   handerChangeSlide(1);
+// }, 3000);
 nextBtn.addEventListener("click", () => {
   handerChangeSlide(1);
 });
@@ -27,7 +30,6 @@ prevBtn.addEventListener("click", () => {
     const slideIndex = parseInt(e.target.dataset.index);
     index = slideIndex;
     positionX = -1 * index * sliderItemWidth;
-    console.log(index);
     sliderMain.style = `transform: translateX(${positionX}px)`;
   })
 );
