@@ -17,14 +17,23 @@
           <form id="form">
             <div class="input-form">
               <span>User Name: </span>
+              <small style="color: red">(*)</small>
+              <br />
+              <small style="color: red" id="errorName"></small>
               <input id="username" type="text" placeholder="Enter your name " />
             </div>
             <div class="input-form">
               <span>Email: </span>
+              <small style="color: red">(*)</small>
+              <br />
+              <small style="color: red" id="errorEmail"></small>
               <input id="email" type="email" placeholder="Enter your email " />
             </div>
             <div class="input-form">
               <span>Password: </span>
+              <small style="color: red">(*)</small>
+              <br />
+              <small style="color: red" id="errorPass"></small>
               <input
                 id="password"
                 type="password"
@@ -33,6 +42,9 @@
             </div>
             <div class="input-form">
               <span>Confirm Password: </span>
+              <small style="color: red">(*)</small>
+              <br />
+              <small style="color: red" id="errorCfPass"></small>
               <input
                 id="cfpassword"
                 type="password"

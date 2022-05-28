@@ -8,7 +8,7 @@ btnLogin.addEventListener("click", (e) => {
   let data = JSON.parse(user);
 
   if (user == null) {
-    alert("Wrong username or password !");
+    alert("Vui lòng nhập đầy đủ thông tin đăng nhập !");
   } else if (
     usernameEle == data.username &&
     emailEle == data.email &&

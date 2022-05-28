@@ -18,7 +18,7 @@
 .container-signup {
   background-color: #fff;
   width: 400px;
-  height: 500px;
+  height: fit-content;
   border-radius: 10px;
 }
 .heading {
@@ -54,5 +54,5 @@ button {
   color: #fff;
   font-size: 18px;
   cursor: pointer;
-  margin-top: 15px;
+  margin: 20px 0;
 }

@@ -384,8 +384,7 @@ ul {
 .logo-pro {
   margin-bottom: 20px;
 }
-.image-pro {
-}
+
 .see-pro {
   position: absolute;
   color: white;
@@ -404,6 +403,106 @@ ul {
 .product-item:hover .see-pro {
   border: solid 1px #000;
   display: block;
+}
+
+.product-other {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+.product-other-main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-other__heading {
+  border-bottom: solid 2px #000 !important;
+  margin-bottom: 3em;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.product-other__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 50px;
+}
+.product-other__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 25%;
+}
+.product-other__item:hover .btn-add button {
+  visibility: visible;
+  cursor: pointer;
+  /* width: 150px;
+  height: 30px; */
+  /* transform: rotate(0deg); */
+}
+.other-img img {
+  width: 285px;
+  height: 183px;
+  cursor: pointer;
+}
+.other-img {
+  position: relative;
+}
+.other-name {
+  opacity: 0.8;
+}
+.other-name:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.other-price {
+  margin: 15px 0;
+  color: #c30005;
+}
+.other-price .price-sale {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.product-sale {
+  width: 50px;
+  height: 50px;
+  background-color: #c30005;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  text-align: center;
+  line-height: 3;
+  color: #fff;
+}
+.btn-add button {
+  width: 150px;
+  height: 30px;
+  border: none;
+  background-color: #c30005;
+  color: #fff;
+  visibility: hidden;
+  /* transition: width 0.5s, height 0.5s, transform 1s; */
+}
+.btn-see-all button {
+  margin-top: 40px;
+  width: 150px;
+  height: 40px;
+  background-color: #fff;
+  opacity: 0.8;
+  font-size: 18px;
+}
+.btn-see-all:hover button {
+  background-color: #000;
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
 }
 
 /*product end*/
