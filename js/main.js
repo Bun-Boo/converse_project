@@ -8,7 +8,6 @@ const dotItems = document.querySelectorAll(".slider-dot-item");
 
 const sliderItemWidth = sliderItems[0].offsetWidth;
 const sliderLength = sliderItems.length;
-console.log("sliderItemWidth", sliderItemWidth);
 
 let positionX = 0;
 let index = 0;

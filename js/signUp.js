@@ -67,7 +67,12 @@ btnSignUp.addEventListener("click", (e) => {
   };
 
   const json = JSON.stringify(user);
-  if (checkName() && checkEmail() && checkPass() && checkCfPass()) {
+  if (
+    user.username != "" &&
+    user.email != "" &&
+    user.password != "" &&
+    user.cfpass != ""
+  ) {
     localStorage.setItem(username.value, json);
     alert("Sign Up Success");
     window.location.href = "login.html";
