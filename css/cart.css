@@ -8,17 +8,23 @@
 
 .container-cart {
   display: flex;
-  z-index: 9999;
+  z-index: 99999999;
   background-color: aliceblue;
   width: 95%;
+  height: 95vh;
   margin: 10px auto;
   border-radius: 10px;
-  position: fixed;
-  top: 0;
-  right: 0;
+  left: 2.5%;
+  top: 2.5%;
   transition: all 0.5s linear;
-  transform: translateY(-100%);
   box-shadow: 0 0 4px 0 rgb(0 0 0 / 8%), 0 4px 4px 0 rgb(0 0 0 / 8%);
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+}
+.table-list--item {
+  height: 600px;
+  overflow-y: auto;
 }
 .close{
   position: absolute;
@@ -31,13 +37,9 @@
   color: #c43b40;
 }
 .container-cart.active{
-
   display: flex;
-  right: 97%;
-  z-index: 999999;
-  transform: translateX(100%);
-  transition: all 0.5s linear;
-  height: 95vh;
+  visibility: visible;
+  opacity: 1;
 }
 .list-cart {
   flex: 1;
