@@ -559,7 +559,9 @@ ul {
   width: 25%;
   height: 300px;
 }
-
+.footer-col h2 {
+  color: #fff;
+}
 .border {
   width: 20%;
   border-bottom: 2px solid red;
