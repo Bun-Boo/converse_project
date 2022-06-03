@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Converse</title>
   <LINK REL="SHORTCUT ICON" href="./img/slider/slide-2.ico">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/cart.css">
   <link rel="stylesheet" href="./css/signup.css">
@@ -216,8 +218,67 @@
       </div>
     </div>
   </div>
-
-  </div> -->
+  <div class="slider-new">
+    <div class="slider-new__main">
+      <div class="slider-new__header">
+        <h3 style="background-color: #000; opacity: 1; color: #fff;">SẢN PHẨM MỚI</h3>
+        <h3>SẢN PHẨM BÁN CHẠY</h3>
+        <h3>SẢN PHẨM PHỔ BIẾN</h3>
+      </div>
+      <div class="slider-new__border"></div>
+      <div class="slider-new__list owl-carousel owl-theme">
+        <div class="slider-new__item">
+          <div class="other-img"><img src="./img/product/product-slider/women-classic-1.jpg" alt=""></div>
+          <div class="other-name"><span>Chuck Taylor Black</span></div>
+          <div class="other-price"><span>1,250,000</span><sup>đ</sup></div>
+          <div class="btn-add"><button>THÊM VÀO GIỎ</button></div>
+        </div>
+        <div class="slider-new__item">
+          <div class="other-img"><img src="./img/product/product-slider/women-classic-2.jpg" alt=""></div>
+          <div class="other-name"><span>Chuck Taylor Red</span></div>
+          <div class="other-price"><span>1,200,000</span><sup>đ</sup></div>
+          <div class="btn-add"><button>THÊM VÀO GIỎ</button></div>
+        </div>
+        <div class="slider-new__item">
+          <div class="other-img"><img src="./img/product/product-slider/women-classic-3.jpg" alt=""></div>
+          <div class="other-name"><span>Chuck Taylor Blue</span></div>
+          <div class="other-price"><span>900,000</span><sup>đ</sup></div>
+          <div class="btn-add"><button>THÊM VÀO GIỎ</button></div>
+        </div>
+        <div class="slider-new__item">
+          <div class="other-img"><img src="./img/product/product-slider/women-classic-4.jpg" alt=""></div>
+          <div class="other-name"><span>Chuck Taylor Classic</span></div>
+          <div class="other-price"><span>700,000</span><sup>đ</sup></div>
+          <div class="btn-add"><button>THÊM VÀO GIỎ</button></div>
+        </div>
+        <div class="slider-new__item">
+          <div class="other-img"><img src="./img/product/product-slider/women-chuck-07-1-768x492.jpg" alt=""></div>
+          <div class="other-name"><span>Chuck 70 Archive Prints</span></div>
+          <div class="other-price"><span>1,00,000</span><sup>đ</sup></div>
+          <div class="btn-add"><button>THÊM VÀO GIỎ</button></div>
+        </div>
+        <div class="slider-new__item">
+          <div class="other-img"><img src="./img/product/product-slider/women-chuck-07-768x492.jpg" alt=""></div>
+          <div class="other-name"><span>Chuck 70 Psy-Kicks Ox</span></div>
+          <div class="other-price"><span>1,700,000</span><sup>đ</sup></div>
+          <div class="btn-add"><button>THÊM VÀO GIỎ</button></div>
+        </div>
+        <div class="slider-new__item">
+          <div class="other-img"><img src="./img/product/product-slider/men-psy-1-768x492.jpg" alt=""></div>
+          <div class="other-name"><span>Chuck 70 Psy-Kicks</span></div>
+          <div class="other-price"><span>1,250,000</span><sup>đ</sup></div>
+          <div class="btn-add"><button>THÊM VÀO GIỎ</button></div>
+        </div>
+        <div class="slider-new__item">
+          <div class="other-img"><img src="./img/product/product-slider/women-psy-2-768x492.jpg" alt=""></div>
+          <div class="other-name"><span>Chuck Taylor All Strar</span></div>
+          <div class="other-price"><span>2,000,000</span><sup>đ</sup></div>
+          <div class="btn-add"><button>THÊM VÀO GIỎ</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   <div class="product-other">
     <div class="product-other-main">
       <div class="product-other__heading">
@@ -322,6 +383,18 @@
         </div>
 
       </div>
+
+      <div class="banner-last">
+        <img src="./img/slider/banner-last.jpg" alt="">
+        <div class="banner-last__content">
+          <h5>
+            MONA SNE
+              <i class="fa-regular fa-star"></i> KER
+          </h5>
+          <h1>KHUYẾN MÃI <span>GIẢM GIÁ 50%</span></h1>
+          <button>Xem sản phẩm</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -381,6 +454,8 @@
         </div>
       </div>
       <div class="btn-see-all"><button>Xem tất cả</button></div>
+
+      
     </div>
   </div>
 
@@ -493,6 +568,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- slider new-->
+  
+
+
+
   <!--footer end-->
   <div class="container-cart">
     <div class="list-cart">
@@ -588,8 +669,28 @@
       <i class="fa-solid fa-xmark"></i>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script>
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+    loop:true,
+    margin:0,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+  </script>
+  <script src="./js/main.js"></script>
+  <script src="./js/cart.js"></script>
 </body>
-<script src="./js/main.js"></script>
-<script src="./js/cart.js"></script>
 
 </html>
