@@ -27,17 +27,17 @@
   overflow-y: auto;
   width: 100%;
 }
-.close{
+.close {
   position: absolute;
-    font-size: 30px;
-    top: 20px;
-    right: 35px;
-    cursor: pointer;
+  font-size: 30px;
+  top: 20px;
+  right: 35px;
+  cursor: pointer;
 }
-.close:hover{
+.close:hover {
   color: #c43b40;
 }
-.container-cart.active{
+.container-cart.active {
   display: flex;
   visibility: visible;
   opacity: 1;
@@ -46,7 +46,7 @@
   flex: 1;
 }
 .cart-info h3,
-.list-cart h3{
+.list-cart h3 {
   text-align: center;
   margin: 30px 0;
 }
@@ -55,15 +55,16 @@
   margin: 0 auto;
 }
 .cart-img {
-    display: flex;
-    align-items: center;
-    justify-content:start ;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
-.cart-img img{
-    width: 70px;
+.cart-img img {
+  width: 70px;
 }
-.cart-input input{
-    width: 30px; outline: none"
+.cart-input input {
+  width: 45px;
+  text-align: center;
 }
 .list-cart table {
   width: 100%;
@@ -75,46 +76,44 @@
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
-.option{
-    cursor: pointer;
+.option {
+  cursor: pointer;
 }
-.option:hover{
-    color: #c43b40;
+.option:hover {
+  color: #c43b40;
 }
-.price-total{
-    margin-top: 100px;
-    text-align: right;
+.price-total {
+  margin-top: 100px;
+  text-align: right;
 }
 .price-total p {
- font-weight: bold;
+  font-weight: bold;
 }
-.cart-pay{
+.cart-pay {
   display: flex;
   justify-content: center;
 }
 .continue-see,
-.pay{
+.pay {
   width: 200px;
   height: 40px;
   margin-right: 30px;
   margin-top: 30px;
 }
 .pay,
-.continue-see{
-background-color: white;
-color: #c43b40;
-border: 1px solid #c43b40;
-font-weight: 600;
-cursor: pointer;
-transition: all 0.2s linear;
+.continue-see {
+  background-color: white;
+  color: #c43b40;
+  border: 1px solid #c43b40;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s linear;
 }
 .pay:hover,
-.continue-see:hover{
+.continue-see:hover {
   background-color: #c43b40;
   color: white;
-  
 }
 .cart-info {
   flex: 1;
 }
-
