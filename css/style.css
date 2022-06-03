@@ -543,6 +543,7 @@ ul {
 }
 .other-name {
   opacity: 0.8;
+  height: 50px;
 }
 .other-name:hover {
   opacity: 1;
