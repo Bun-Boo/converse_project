@@ -85,6 +85,14 @@ function WarningToast() {
     duration: 3000,
   });
 }
+function ErrorToast() {
+  toast({
+    title: "Thất bại!",
+    message: "Vui lòng nhập đầy đủ thông tin!",
+    type: "error",
+    duration: 3000,
+  });
+}
 //-------------Them san pham ---------------//
 function addCart(productImg, productName, productPrice) {
   let addEletr = document.createElement("tr");
@@ -279,8 +287,13 @@ payEle.addEventListener("click", (e) => {
     product.email != ""
   ) {
     localStorage.setItem("customer information", json);
-    alert("Đã lưu thông tin thanh toán");
+    toast({
+      title: "Thành công!",
+      message: "Đã lưu thông tin thanh toán.",
+      type: "success",
+      duration: 3000,
+    });
   } else {
-    alert("Vui lòng nhập đầy đủ thông tin !");
+    ErrorToast();
   }
 });
